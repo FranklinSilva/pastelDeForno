@@ -1,8 +1,8 @@
 package a2.br.ufba.mata55.lista1;
 
 public class Retangulo {
-	private double largura;
-	private double altura;
+	double largura;
+	double altura;
 	
 	public Retangulo(double largura, double altura) {
 		this.largura = largura;
