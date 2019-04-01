@@ -24,7 +24,7 @@ public class ListaInt {
 		return valores;
 	}
 
-	public boolean insiraElemento(int valor){
+	public boolean insereElemento(int valor){
 		boolean inserido = false;
 		if(!isLotado()){
 			valores[getTam()] = valor;

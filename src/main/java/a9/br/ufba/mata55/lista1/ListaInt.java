@@ -1,4 +1,4 @@
-package a9.br.ufba.mata55.Lista1;
+package a9.br.ufba.mata55.lista1;
 
 public class ListaInt {
 

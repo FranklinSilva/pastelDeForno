@@ -1,12 +1,12 @@
 package a16.br.ufba.mata55.lista1;
 
-public class Main{
+public class ListaInt {
 
 	int quantidade;
 	int capacidade;
 	int[] lista;
 
-	public Main(int capacidade){
+	public ListaInt(int capacidade){
 		this.capacidade = capacidade;
 		this.lista = new int[capacidade];
     this.quantidade = 0;
