@@ -78,7 +78,7 @@ public class TesteListaInt {
 		lista.insereElemento(1);
 		lista.insereElemento(-1);
 		lista.insereElemento(0);
-		assertEquals(3, lista.obtemElemento(2));
+		assertEquals(0, lista.obtemElemento(2));
 	}
 
 }
