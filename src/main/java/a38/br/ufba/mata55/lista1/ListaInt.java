@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ListaInt {
     int quantidade;
     
- ArrayList<Integer> valoreslista = new ArrayList<>(quantidade);
+ ArrayList<Integer> valoreslista = new ArrayList<Integer>(quantidade);
  
 public ListaInt(int qtd){
     this.quantidade = qtd;

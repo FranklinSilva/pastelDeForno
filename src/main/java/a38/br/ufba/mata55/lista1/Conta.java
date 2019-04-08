@@ -37,7 +37,7 @@ void deposita(double quantia){
     }
         
 
-    Conta beneficiario = new Conta(codigo, saldo);
+   
 
 boolean transfere(double quantia,Conta beneficiario){
     

@@ -7,8 +7,8 @@ public class Retangulo {
 		largura = 1;
 	}
 	public Retangulo(double x, double y){
-		altura = x;
-		largura = y;
+		altura = y;
+		largura = x;
 	}
 	double calculaArea() {
 		return altura*largura;

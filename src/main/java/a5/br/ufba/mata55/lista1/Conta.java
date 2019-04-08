@@ -4,13 +4,13 @@ public class Conta {
 	String codigo;
 	double saldo;
 
-	Conta(String c, double dim) {
+	public Conta(String c, double dim) {
 
 		this.codigo = c;
 		this.saldo = dim;
 	}
 
-	Conta(String c) {
+	public Conta(String c) {
 		this.codigo = c;
 		this.saldo = 0;
 	}

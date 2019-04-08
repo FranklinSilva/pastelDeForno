@@ -5,11 +5,11 @@ public class Conta {
 	protected String codigo;
 	protected double saldo; 
 	
-	Conta(String codigo) {
+	public Conta(String codigo) {
 		this.codigo=codigo;
 	}
 	
-	Conta(String codigo, double saldo) {
+	public Conta(String codigo, double saldo) {
 		this.codigo=codigo;
 		this.saldo=saldo;
 	}

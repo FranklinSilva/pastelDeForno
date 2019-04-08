@@ -9,11 +9,11 @@ public class ListaInt {
 		array = new int[tamanho];
 		}
 	
-	public int obtemtamanho() {
+	public int obtemTamanho() {
 		return numelementos;
 	}
 	
-	public boolean insereelemento(int valor) {
+	public boolean insereElemento(int valor) {
 		if(numelementos == array.length)
 			return false;
 		else {
@@ -23,7 +23,7 @@ public class ListaInt {
 		}
 	}
 	
-	public int obtemelemento(int i) {
+	public int obtemElemento(int i) {
 		if(i >= array.length) return -1;
 		else return array[i];
 	}

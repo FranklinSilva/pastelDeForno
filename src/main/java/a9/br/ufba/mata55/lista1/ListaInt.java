@@ -5,7 +5,7 @@ public class ListaInt {
 	int contador = 0;
 	int[] array;
 
-	ListaInt(int tamanhoDaLista) {
+	public ListaInt(int tamanhoDaLista) {
 		this.array = new int[tamanhoDaLista];
 	}
 

@@ -13,12 +13,12 @@ public class Retangulo {
 		this.altura = 1;
 	}
 
-	double calcularArea() {
+	double calculaArea() {
 		return largura * altura;
 		
 	}
 
-	double calcularPerimetro() {
+	double calculaPerimetro() {
 		return (altura + largura) * 2;
 	}
 }

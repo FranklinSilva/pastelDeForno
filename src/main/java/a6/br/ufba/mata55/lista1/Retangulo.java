@@ -8,6 +8,9 @@ public class Retangulo {
 		    largura = larg;
 		    altura = alt;
 		  }
+	 public Retangulo() {
+		    largura = altura = 1;
+		  }
 	
 	public double calculaArea() {
 	    return largura*altura;

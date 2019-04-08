@@ -3,11 +3,11 @@ package a7.br.ufba.mata55.lista1;
 class Conta {
     String codigo;
     double saldo;
-    Conta (String codigo, double saldo){
+    public Conta (String codigo, double saldo){
         this.codigo = codigo;
         this.saldo = saldo;
     }
-    Conta (String codigo){
+    public Conta (String codigo){
         this(codigo, 0);
     }
 

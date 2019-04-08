@@ -8,6 +8,10 @@ public class Conta {
 	    codigo = cod;
 	    saldo = dinheiro;
 	  }
+	public Conta(String cod) {
+	    codigo = cod;
+	    saldo = 0;
+	  }
 	
 	public boolean retira(double quantia) {
 		if (saldo < quantia) {

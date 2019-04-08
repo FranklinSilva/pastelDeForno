@@ -1,21 +1,21 @@
 package a3.br.ufba.mata55.lista1;
 
 public class Retangulo {
-	public double alt;
-	public double lar;
+	public double altura;
+	public double largura;
 	
-	public Retangulo(double alt, double lar) {
-		this.alt = alt;
-		this.lar = lar;
+	public Retangulo(double lar, double alt) {
+		this.altura = alt;
+		this.largura = lar;
 	}
 	public Retangulo() {
-		alt=1;
-		lar=1;
+		altura=1;
+		largura=1;
 	}
 	public double calculaArea() {
-		return lar*alt;
+		return largura*altura;
 	}
 	public double calculaPerimetro() {
-		return lar+alt;
+		return largura+altura;
 	}
 }

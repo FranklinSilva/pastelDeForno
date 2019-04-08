@@ -2,8 +2,8 @@ package a9.br.ufba.mata55.lista1;
 
 public class Retangulo{
 	
-	private double largura;
-	private double altura;
+	public double largura;
+	public double altura;
 	
 
 	public Retangulo(){

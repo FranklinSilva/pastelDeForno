@@ -2,14 +2,14 @@ package a3.br.ufba.mata55.lista1;
 
 public class Conta {
 	double saldo;
-	String cod;
+	String codigo;
 		
 	public Conta(String cod, double saldo) {
-		this.cod = cod;
+		this.codigo = cod;
 		this.saldo = saldo;
 	}
 	public Conta(String cod) {
-		this.cod = cod;;
+		this.codigo = cod;;
 		saldo=0;
 	}
 	boolean retira(double quantia) {

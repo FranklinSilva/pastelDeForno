@@ -7,16 +7,16 @@ public class Retangulo {
 		altura = largura = 1;
 	}
 	
-	public Retangulo(double alturaent, double larguraent) {
+	public Retangulo(double larguraent, double alturaent) {
 		altura = alturaent;
 		largura = larguraent;
 	}
 
-	public double calculaarea() {
+	public double calculaArea() {
 		return altura*largura;
 	}
 	
-	public double calculaperimetro() {
+	public double calculaPerimetro() {
 		return (altura*2 + largura*2);
 	}
 }
