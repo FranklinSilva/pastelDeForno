@@ -3,7 +3,10 @@ package a23.br.ufba.mata55.lista1;
 public class ListaInt {
 		int []lista;
 		int tamanho;
-	
+		public ListaInt (int tamanho) {
+			this.tamanho = tamanho;
+			lista=new int[tamanho];
+		}
 		int obtemTamanho() {
 			tamanho = this.lista.length;
 			return tamanho;
@@ -19,7 +22,7 @@ public class ListaInt {
 			return false;	
 		
 		}
-		int obtemElemente (int i) {
+		int obtemElemento (int i) {
 			if(lista[i]!=0) {
 				return lista[i];
 			}

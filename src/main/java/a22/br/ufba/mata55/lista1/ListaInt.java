@@ -11,11 +11,12 @@ public class ListaInt {
     
     
     //cria lista pra receber inteiros
-    ArrayList<Integer> lista_inteiro = new ArrayList<>(tamanholista);
+    ArrayList<Integer> lista_inteiro;
     
     public ListaInt(int quantidade)
     {
         this.tamanholista = quantidade;
+        lista_inteiro = new ArrayList<Integer>(tamanholista);
     }
     
     int obtemTamanho()

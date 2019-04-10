@@ -4,6 +4,16 @@ public class Conta {
 	String codigo;
 	double saldo;
 	
+	public Conta(String codigoent){
+		saldo = 0;
+		codigo = codigoent;
+	}
+	
+	public Conta(String codigoent, double saldoent){
+		saldo = saldoent;
+		codigo = codigoent;
+	}
+	
 	boolean retira (double quantia) {
 		if (saldo >= quantia) {
 			saldo = saldo - quantia;
@@ -19,7 +29,7 @@ public class Conta {
 	}
 	
 	boolean transfere (double quantia, Conta beneficiario) {
-		if ((saldo > 0) || (Conta != NULL)) {
+		if ((saldo > 0) || (Conta != null)) {
 			Conta = Conta + quantia;
 			return true;
 		}

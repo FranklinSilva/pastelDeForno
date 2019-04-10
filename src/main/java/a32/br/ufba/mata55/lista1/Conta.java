@@ -3,10 +3,10 @@ package a32.br.ufba.mata55.lista1;
 public class Conta {
 	String codigo;
 	double saldo;
-	Conta (String c){
+	public Conta (String c){
 		codigo = c;
 	}
-	Conta (String c, double s){
+	public Conta (String c, double s){
 		codigo = c;
 		saldo = s;
 	}
@@ -24,10 +24,10 @@ public class Conta {
 	boolean transfere(double quantia, Conta beneficiario) {
 		if ((quantia>saldo)&&((beneficiario==null)||(beneficiario.codigo==null))) {
 			if(quantia>saldo) {
-				System.out.println("Saldo insuficiente para transferência!\n");
+				System.out.println("Saldo insuficiente para transferï¿½ncia!\n");
 			}
 			if((beneficiario==null)||(beneficiario.codigo==null)) {
-				System.out.println("Beneficiário inexistente ou código de conta inválido\n");
+				System.out.println("Beneficiï¿½rio inexistente ou cï¿½digo de conta invï¿½lido\n");
 			}
 			return false;
 		}else {

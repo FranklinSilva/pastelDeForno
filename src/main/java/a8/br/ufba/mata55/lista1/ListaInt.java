@@ -3,7 +3,9 @@ package a8.br.ufba.mata55.lista1;
 public class ListaInt {
 
 	int[] array;
-	
+	ListaInt(int tamanho){
+        this.array = new int[tamanho];
+    }
 	int obtemTamanho() {
 		return array.length;
 	}

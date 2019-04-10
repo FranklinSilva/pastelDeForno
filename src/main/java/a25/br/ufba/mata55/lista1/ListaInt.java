@@ -2,7 +2,7 @@ package a25.br.ufba.mata55.lista1;
 
 public class ListaInt {
 	int capacidade;
-	int[] valores = new int[capacidade];
+	int[] valores;
 	
 	ListaInt(int capacidade) {
 		this.capacidade = capacidade;

@@ -3,7 +3,7 @@ package a33.br.ufba.mata55.lista1;
 public class ListaInt {
 	int capacidade;
 	int[] lista;
-	int posicao;
+	int posicao=0;
 	
 	public ListaInt(int capacidade) {
 		this.capacidade = capacidade;

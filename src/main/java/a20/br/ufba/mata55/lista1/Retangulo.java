@@ -9,7 +9,7 @@ public class Retangulo {
 		this.altura = this.largura = 1;
 	}
 	
-	public Retangulo(double altura, double largura) {
+	public Retangulo(double largura, double altura) {
 		this.altura = altura;
 		this.largura = largura;
 	}

@@ -4,9 +4,8 @@ import java.util.*;
 public class Retangulo{
 	
 	private static final double NULL = 0;
-	private double altura;
-	private double largura;
-	
+	public double altura;
+	public double largura;
 	
 	public void setAltura(double altura) {
 		this.altura = altura;
@@ -17,7 +16,7 @@ public class Retangulo{
 	}
 
 
-	public double area() {
+	public double calculaArea() {
 		if (altura != 0 && largura !=0) {
 		
 			return (altura*largura);
@@ -26,7 +25,7 @@ public class Retangulo{
 		 return (1);
 		}
 	}
-	public double perimetro() {
+	public double calculaPerimetro() {
 		if (altura != 0 && largura !=0) {
 		
 			return((altura*2)+(largura*2));
@@ -50,7 +49,5 @@ public static void main(String[] args) {
 	retangulo1.setAltura(altura);
 	retangulo1.setLargura(largura);
 	
-	System.out.println("Área do rentangulo="+retangulo1.area());
-	System.out.println("Perímetro do retangulo="+retangulo1.perimetro());
-  }
+	  }
 }

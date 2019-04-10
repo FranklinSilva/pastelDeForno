@@ -3,12 +3,16 @@ package a25.br.ufba.mata55.lista1;
 public class Conta {
 
 	 String codigo;
-	 double saldo;
+	 Double saldo;
 	 
-	 Conta(String codigo, double saldo) {
+	 public Conta(String codigo, double saldo) {
 	        this.codigo = codigo;
 	        this.saldo = saldo;
-	    }	    
+	    }	
+	 public Conta(String codigo) {
+	        this.codigo = codigo;
+	        this.saldo = null;
+	    }
 	 
 	public boolean retira(double quantia) {
 		 if(quantia<this.saldo) {
@@ -23,7 +27,7 @@ public class Conta {
 		this.saldo = saldo + quantia;
 	 }
 	 
-	 public boolean trasnfere(double quantia, Conta beneficiario) {
+	 public boolean transfere(double quantia, Conta beneficiario) {
 		 if(quantia<this.saldo || beneficiario==null) {
 			return false; 
 		 }else {

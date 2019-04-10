@@ -5,11 +5,14 @@ public class Retangulo {
 	 double altura;
 	 double largura;
 	
-	Retangulo(double altura, double largura) {        
+	Retangulo(double largura, double altura) {        
         this.altura = altura;
         this.largura = largura;
     }
-	
+	Retangulo() {        
+        this.altura = 1;
+        this.largura = 1;
+    }
 	public double calculaArea() {
 		return altura*largura;
 		

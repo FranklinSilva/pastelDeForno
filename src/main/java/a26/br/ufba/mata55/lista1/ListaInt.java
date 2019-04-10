@@ -32,7 +32,7 @@ public class ListaInt {
     }
     
     int obtemElemento(int i){
-        if(i > this.array.length-1){
+        if(i > topo-1){
             return -1;
         }
         

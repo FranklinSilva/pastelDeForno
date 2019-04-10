@@ -17,7 +17,7 @@ public class Conta {
 		return false;
 	}
 	boolean transfere (double quantia, Conta beneficiario) {
-		if(quantia>=saldo || beneficiario != null) {
+		if(quantia<=saldo && beneficiario != null) {
 			saldo-=quantia;
 			beneficiario.saldo+=quantia;
 			return true;

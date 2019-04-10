@@ -19,15 +19,13 @@ public class Retangulo {
     public double calculaArea(){
         double result;
         result  = largura*altura;
-        System.out.println("A área do retangulo é igual a -> " + result);
-        return 0;
+        return result;
     }
     
     public double calculaPerimetro(){
         double result;
         result = (largura*2) + (altura*2);
-        System.out.println("O perimetro do retangulo é igual a -> " + result);
-        return 0;
+        return result;
     }
     
     public Retangulo(double largura, double altura){

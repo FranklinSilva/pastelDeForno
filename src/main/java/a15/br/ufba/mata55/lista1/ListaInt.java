@@ -6,9 +6,10 @@ public class ListaInt {
 	
 	public ListaInt(int c) {
 		this.t = c;
+		v = new int[c];
 	}
 	
-	int obtemTamanho () {
+	public int obtemTamanho () {
 		int c = 0;
 		for (int i = 0; i < this.t; i++) {
 			if (this.v[i] != 0) {
@@ -18,7 +19,7 @@ public class ListaInt {
 		}
 		return c;
 	}
-	boolean insereElemento (int valor) {
+	public boolean insereElemento (int valor) {
 		boolean ie=false;
 		for (int i = 0; i < this.t; i++) {
 			if (this.v[i] != 0) {
@@ -30,7 +31,7 @@ public class ListaInt {
 		}
 		return ie;
 	}
-	int obtemElemento(int i) {
+	public int obtemElemento(int i) {
 		int e;
 		if (this.v[i] != 0) {
 			e = this.v[i];

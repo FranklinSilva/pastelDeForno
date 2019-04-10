@@ -11,10 +11,11 @@ package a30.br.ufba.mata55.lista1;
  */
 public class ListaInt {
     int qnt;
-    int[] vetor = new int[qnt];
+    int[] vetor;
     
     public ListaInt(int quantidade){
         this.qnt = quantidade;
+        vetor = new int[qnt];
     }
     
     int obtemTamanho(){
@@ -26,7 +27,7 @@ public class ListaInt {
         if(tamUso == qnt){
             return false;
         }else{
-            this.vetor[tamUso] = valor;
+            this.vetor[qnt++] = valor;
             return true;
         }
     }

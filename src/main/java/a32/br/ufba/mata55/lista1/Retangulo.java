@@ -15,10 +15,10 @@ public class Retangulo {
 		largura = x;
 		altura = y;
 	}
-	double CalculaArea () {
+	double calculaArea () {
 		return largura * altura;
 	}
-	double CalculaPerimetro () {
+	double calculaPerimetro () {
 		return (largura + altura)*2;
 	}	
 }

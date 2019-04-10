@@ -5,7 +5,7 @@ public class Retangulo {
     double largura; 
     double altura;
     
-    public Retangulo(int i, int j){
+    public Retangulo(double i, double j){
         largura = i;
         altura = j;
     }

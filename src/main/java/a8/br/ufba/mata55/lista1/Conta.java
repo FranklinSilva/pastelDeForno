@@ -5,6 +5,16 @@ public class Conta {
 	String codigo;
 	double saldo = 0;
 	
+	public Conta(String codigoent){
+		saldo = 0;
+		codigo = codigoent;
+	}
+	
+	public Conta(String codigoent, double saldoent){
+		saldo = saldoent;
+		codigo = codigoent;
+	}
+	
 	boolean retira(double quantia) {
 		if (saldo > quantia) {
 			this.saldo = this.saldo - quantia;

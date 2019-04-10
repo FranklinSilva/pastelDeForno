@@ -4,7 +4,7 @@ public class Conta {
 	double saldo;
 	String codigo;
 	
-	public Conta(double saldo, String codigo) {
+	public Conta(String codigo, double saldo) {
 		this.saldo = saldo;
 		this.codigo = codigo;
 	}
@@ -34,15 +34,6 @@ public class Conta {
 			return true;
 		} 
 		return false;
-	}
-	
-	public static void main (String[] args) {
-		Conta minhaConta = new Conta(3, "ingrid");
-		Conta beneficiario = new Conta("beneficiario");
-		System.out.println(minhaConta.saldo);
-		minhaConta.transfere(1, beneficiario);
-		System.out.println(minhaConta.saldo);
-		System.out.println(beneficiario.saldo);
 	}
 	
 }
