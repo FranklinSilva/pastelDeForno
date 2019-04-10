@@ -42,7 +42,7 @@ public class ListaInt {
       //for(int i = 0; i < lista_inteiro.size(); i++)
       //System.out.println(lista_inteiro.get(i));
       //return lista_inteiro.indexOf(i);
-        if(i <= this.tamanholista){
+        if(i < lista_inteiro.size() && i>=0){
             return lista_inteiro.get(i);
         }else{
             return -1;
@@ -51,11 +51,10 @@ public class ListaInt {
 //-----------------------------------------------               
     public static void main(String[] args) {
        ListaInt objeto = new ListaInt(5);
-       
        objeto.insereElemento(1);
-       objeto.insereElemento(2);
-       //objeto.insereElemento(3);
+       objeto.insereElemento(-1);
+       objeto.insereElemento(0);
        
-        System.out.println(objeto.obtemElemento(6));
+        System.out.println(objeto.obtemElemento(1));
     }
 }

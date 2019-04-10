@@ -5,24 +5,19 @@ public class ListaInt {
 	int[] valores;
 	
 	ListaInt(int capacidade) {
-		this.capacidade = capacidade;
+		this.capacidade = 0;
 		this.valores = new int[capacidade];
 		
 	}
 	
 	public int obtemTamanho() {
-		int elementos = 0;		
-		for (int i=0; i<this.capacidade; i++) {
-			elementos++;
-			            
-        }
-        return elementos;
+		return capacidade;
 	}
 	
-	public boolean insereElemento(int valor) {		
-		int elementos = this.obtemTamanho();
-        if(elementos < this.capacidade) {
-            this.valores[elementos] = valor;
+	public boolean insereElemento(int valor) {	
+        if(capacidade < valores.length) {
+            valores[capacidade] = valor;
+            capacidade++;
             return true;
         }
         else {
@@ -31,8 +26,8 @@ public class ListaInt {
 	}
 	
 	public int obtemElemento(int i) {
-        if (i>(capacidade-1)) {
-            return this.valores[i];
+        if (i>=0 && i<capacidade) {
+            return valores[i];
         }
         else {
             return -1;
